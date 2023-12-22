@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "cu.mecisoft.hea"
+    namespace = "cu.crheasoft.appTest"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "cu.mecisoft.hea"
+        applicationId = "cu.crheasoft.appTest"
         minSdk = 19
         targetSdk = 33
         versionCode = 1

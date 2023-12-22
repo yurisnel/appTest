@@ -70,12 +70,12 @@ INSERT INTO producto (campo,valor) VALUES
 ('admin_clave',''), 
 ('admin_user',''), 
 ('app_name','Hea'), 
-('app_package','cu.mecisoft.hea'), 
+('app_package','cu.crheasoft.appTest'), 
 ('checkAdminSegura',''), 
 ('checkLogoProyecto','off'), 
 ('checkPresentInicio','off'), 
 ('coleccion',''), 
 ('disennoLibre',''), 
-('nombre','appTest'), 
+('nombre',''), 
 ('titulo','App Test');
 <endline>

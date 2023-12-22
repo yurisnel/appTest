@@ -1,4 +1,4 @@
-package cu.mecisoft.hea;
+package cu.crheasoft.appTest;
 
 import android.app.Activity;
 import android.content.ComponentName;
