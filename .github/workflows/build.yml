@@ -32,16 +32,19 @@ jobs:
           cache: 'gradle'
       - name: Change wrapper permissions
         run: chmod +x ./gradlew        
+      
+      # Build APK
       - name: Build with Gradle
         run: ./gradlew build
-      # Create APK Release
-      - name: Build apk release project (APK)
-        run: ./gradlew assemble
+      
+      # Create APK Debug
+      - name: Build apk debug project (APK)
+        run: ./gradlew assembleDebug
       
       # Upload Artifact Build
-      # Noted For Output app/build/outputs/apk/release/
-      - name: Upload APK Release
+      # Noted For Output app/build/outputs/apk/debug/
+      - name: Upload APK Debug
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.date_today }} - ${{ env.apk_name }} - ${{ env.repository_name }} - APK(s) release generated
-          path: app/build/outputs/apk/release/
+          name: ${{ env.date_today }} - ${{ env.apk_name }} - ${{ env.repository_name }} - APK(s) debug generated
+          path: app/build/outputs/apk/debug/
